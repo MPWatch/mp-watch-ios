@@ -2,13 +2,13 @@
 //  TweetsViewController.swift
 //  MP Watch
 //
-//  Created by Benny Singer on 5/10/18.
+//  Created by MPWatch Team on 5/10/18.
 //  Copyright © 2018 MPWatch. All rights reserved.
 //
 
 import UIKit
 
-class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
 
     var tweets: [Tweet]?
     var topics: [Topic]?
@@ -30,6 +30,10 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.estimatedRowHeight = 120 //only used for scrollbar height dimension
         
         topicCollectionView.dataSource = self
+        topicCollectionView.delegate = self
+        
+        let flowLayout = topicCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        flowLayout.estimatedItemSize = CGSize(width: 75, height: 60)
         
         fetchTopics()
     }
@@ -73,6 +77,10 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        currentTopic = topics![indexPath.row]
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let topics = topics {
             return topics.count
@@ -84,8 +92,8 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topicCell", for: indexPath) as! TopicCell
         cell.topic = topics![indexPath.row]
-        cell.parentViewController = self
-        
         return cell
+        
     }
+    
 }

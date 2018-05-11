@@ -1,15 +1,18 @@
 PODS:
+  - ActiveLabel (0.8.1)
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
 
 DEPENDENCIES:
+  - ActiveLabel (~> 0.8.1)
   - AlamofireImage
 
 SPEC CHECKSUMS:
+  ActiveLabel: e361127c355b911a467db3d5a897b3d7f902e568
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
 
-PODFILE CHECKSUM: 9370c1cc5a0e58188a264299b930dc368524db4d
+PODFILE CHECKSUM: d3998fd53c30fda4db804f3423cd76d161ab850b
 
 COCOAPODS: 1.4.0

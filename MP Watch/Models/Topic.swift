@@ -2,7 +2,7 @@
 //  Topic.swift
 //  MP Watch
 //
-//  Created by Benny Singer on 5/11/18.
+//  Created by MPWatch Team on 5/11/18.
 //  Copyright © 2018 MPWatch. All rights reserved.
 //
 

@@ -4,7 +4,7 @@
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/tLztpBL.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/b5miRCH.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -14,17 +14,18 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 - [X] Topic timelines - displays tweets for each topic
     - [X] Pulls tweets from topic API endpoint
-- [X] Topic choice - displays all topics in horizontally-scrolling top bar
+- [X] Topic bar - displays all topics in horizontally-scrolling bar
+    - [X] Dynamically size button based on title
     - [X] Pulls topics from topics API endpoint
 - [X] Tweet cell
     - [X] Displays a tweet's age, author, content
+    - [X] Specially format hashtags, links, and mentions
 
 🚫 The following functionality is under construction: 🔨
 
 - [ ] Topic bar UI improvements
     - [ ] Center topic buttons
     - [ ] Bold current topic
-    - [ ] Dynamically size button based on title
 - [ ] Movement betweent topics
     - [ ] Use gesture recognizers to change topic choice
     - [ ] Use swipe menu to change topic
@@ -33,7 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
     - [ ] Displays tweets in topic sections
 - [ ] Add loading HUDs
 - [ ] Tweet cell
-    - [ ] Beautify cell, add support for mentions, hashtags, links
+    - [ ] Add action support for mentions, hashtags, links
     - [ ] Add favorite and retweet count
 - [ ] Add refresh
 - [ ] Add infinite scroll for topic tweets

@@ -6,7 +6,8 @@ target 'MP Watch' do
   use_frameworks!
 
   pod 'AlamofireImage'
-
+  pod 'ActiveLabel', '~> 0.8.1'
+  
   target 'MP WatchTests' do
     inherit! :search_paths
     # Pods for testing
