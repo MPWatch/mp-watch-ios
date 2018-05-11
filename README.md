@@ -17,6 +17,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 - [X] Topic bar - displays all topics in horizontally-scrolling bar
     - [X] Dynamically size button based on title
     - [X] Pulls topics from topics API endpoint
+    - [X] Bold current topic
 - [X] Tweet cell
     - [X] Displays a tweet's age, author, content
     - [X] Specially format hashtags, links, and mentions
@@ -24,15 +25,15 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 🚫 The following functionality is under construction: 🔨
 
 - [ ] Topic bar UI improvements
-    - [ ] Center topic buttons
-    - [ ] Bold current topic
+    - [ ] Add underline, animation for selected topic
 - [ ] Movement betweent topics
     - [ ] Use gesture recognizers to change topic choice
     - [ ] Use swipe menu to change topic
 - [ ] Add search bar
     - [ ] Given MP name, pulls tweets from MP endpoint
     - [ ] Displays tweets in topic sections
-- [ ] Add loading HUDs
+- [ ] Add activitity indicator for TableViews
+- [ ] Add loading HUD for initial load
 - [ ] Tweet cell
     - [ ] Add action support for mentions, hashtags, links
     - [ ] Add favorite and retweet count
