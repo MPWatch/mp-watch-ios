@@ -85,13 +85,10 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // if the previously-selected topic is still on screen, unbold it
         if let prev = collectionView.cellForItem(at: currentTopicIndexPath!) as? TopicCell {
-            // hacky fix - because the first topic initially renders as bold, it needs to shrink so
+            // hacky fix - when a topic initially renders as bold (either because its the first topic or
+            // because it leaves the screen after being selected and comes back), it needs to shrink so
             // that its text doesn't cut off when its font increases to 17 non-bold
-            if currentTopicIndexPath?.row == 0 {
-                 prev.topicLabel.font = UIFont.systemFont(ofSize: 16)
-            } else {
-                prev.topicLabel.font = UIFont.systemFont(ofSize: 17)
-            }
+            prev.topicLabel.font = UIFont.systemFont(ofSize: 16)
         }
         
         let cell = collectionView.cellForItem(at: indexPath) as! TopicCell
