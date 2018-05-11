@@ -1,0 +1,6 @@
+framework module Pods_MP_Watch {
+  umbrella header "Pods-MP Watch-umbrella.h"
+
+  export *
+  module * { export * }
+}

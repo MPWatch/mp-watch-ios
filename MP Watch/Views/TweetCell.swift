@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class TweetCell: UITableViewCell {
 
@@ -18,13 +19,13 @@ class TweetCell: UITableViewCell {
     
     var tweet: Tweet! {
         didSet {
-//            if let profileUrl = profileUrl {
-//                profileImageView.setImageWith(profileUrl as URL)
-//            } else {
-//                profileImageView.image =
-//            }
-//            profileImageView.layer.cornerRadius = 8.0
-//            profileImageView.clipsToBounds = true
+            if let profilePictureUrl = tweet.profilePictureUrl {
+                profileImageView.af_setImage(withURL: profilePictureUrl)
+            } else {
+                profileImageView.image = #imageLiteral(resourceName: "profile-Icon")
+            }
+            profileImageView.layer.cornerRadius = 8.0
+            profileImageView.clipsToBounds = true
             
             if let name = tweet.name {
                 nameButton.setTitle(name as String, for: .normal)
@@ -83,7 +84,7 @@ class TweetCell: UITableViewCell {
         
         return "Just now"
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
