@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="159" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wkq-gQ-wuu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetCell" rowHeight="159" id="MUu-zS-C49" customClass="TweetCell" customModule="MP_Watch" customModuleProvider="target">
@@ -92,18 +92,61 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qwN-yc-gw1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6mw-7H-ZIQ">
+                                    <size key="itemSize" width="164" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="topicCell" id="apt-ur-Ahl" customClass="TopicCell" customModule="MP_Watch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="13" width="164" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRc-bt-Odk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="50"/>
+                                                    <state key="normal" title="Topic"/>
+                                                    <connections>
+                                                        <action selector="topicChosen:" destination="apt-ur-Ahl" eventType="touchUpInside" id="Yae-Vp-Nc5"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bRc-bt-Odk" secondAttribute="trailing" id="GKI-HT-pRm"/>
+                                            <constraint firstAttribute="bottom" secondItem="bRc-bt-Odk" secondAttribute="bottom" id="cfy-ep-bNf"/>
+                                            <constraint firstItem="bRc-bt-Odk" firstAttribute="leading" secondItem="apt-ur-Ahl" secondAttribute="leading" id="eqU-bU-bAd"/>
+                                            <constraint firstItem="bRc-bt-Odk" firstAttribute="top" secondItem="apt-ur-Ahl" secondAttribute="top" id="sTp-Lr-QTl"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="topicButton" destination="bRc-bt-Odk" id="Ege-ah-WdE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wkq-gQ-wuu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ClT-yC-Iyh"/>
                             <constraint firstItem="wkq-gQ-wuu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SJE-lN-Tqb"/>
-                            <constraint firstItem="wkq-gQ-wuu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SNZ-GZ-ae1"/>
+                            <constraint firstItem="wkq-gQ-wuu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="84" id="SNZ-GZ-ae1"/>
+                            <constraint firstItem="qwN-yc-gw1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UKu-0t-sfE"/>
+                            <constraint firstItem="qwN-yc-gw1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WQ7-v2-aqc"/>
+                            <constraint firstItem="wkq-gQ-wuu" firstAttribute="top" secondItem="qwN-yc-gw1" secondAttribute="bottom" constant="8" id="kOn-Hn-iQz"/>
+                            <constraint firstItem="qwN-yc-gw1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ofn-ZF-oOq"/>
                             <constraint firstItem="wkq-gQ-wuu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zPc-SI-FVU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="wkq-gQ-wuu" id="7bt-Bc-nc1"/>
+                        <outlet property="topicCollectionView" destination="qwN-yc-gw1" id="SHo-Iq-bnK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
