@@ -123,7 +123,6 @@
                                         <constraints>
                                             <constraint firstItem="fzX-VK-oAU" firstAttribute="centerX" secondItem="apt-ur-Ahl" secondAttribute="centerX" id="5iX-gn-yAD"/>
                                             <constraint firstItem="fzX-VK-oAU" firstAttribute="centerY" secondItem="apt-ur-Ahl" secondAttribute="centerY" id="SDy-Kt-gYN"/>
-                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="fzX-VK-oAU" secondAttribute="trailing" id="kys-AJ-fuZ"/>
                                             <constraint firstItem="fzX-VK-oAU" firstAttribute="leading" secondItem="apt-ur-Ahl" secondAttribute="leadingMargin" id="oLB-GK-9sa"/>
                                         </constraints>
                                         <connections>

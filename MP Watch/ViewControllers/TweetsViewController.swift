@@ -13,9 +13,12 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var tweets: [Tweet]?
     var topics: [Topic]?
     
+    var normalSize: Float?
+    
+    var currentTopicIndexPath: IndexPath?
     var currentTopic: Topic? {
         didSet {
-            fetchTweets(topic: (currentTopic?.topic!)!)
+            fetchTweets(topic: currentTopic!.topic!)
         }
     }
     
@@ -43,7 +46,9 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             if let topics = topics {
                 self.topics = topics.sorted(by: { $0.tweetCount! > $1.tweetCount! })
                 self.topicCollectionView.reloadData()
+                
                 self.currentTopic = self.topics![0]
+                self.currentTopicIndexPath = IndexPath(row: 0, section: 0)
             }
         })
     }
@@ -78,7 +83,21 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        currentTopic = topics![indexPath.row]
+        // if the previously-selected topic is still on screen, unbold it
+        if let prev = collectionView.cellForItem(at: currentTopicIndexPath!) as? TopicCell {
+            // hacky fix - because the first topic initially renders as bold, it needs to shrink so
+            // that its text doesn't cut off when its font increases to 17 non-bold
+            if currentTopicIndexPath?.row == 0 {
+                 prev.topicLabel.font = UIFont.systemFont(ofSize: 16)
+            } else {
+                prev.topicLabel.font = UIFont.systemFont(ofSize: 17)
+            }
+        }
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! TopicCell
+        currentTopic = cell.topic
+        currentTopicIndexPath = indexPath
+        cell.topicLabel.font = UIFont.boldSystemFont(ofSize: 16)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -91,7 +110,17 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topicCell", for: indexPath) as! TopicCell
+        
         cell.topic = topics![indexPath.row]
+        
+        // this method runs when a cell comes back on screen
+        // check if the cell contains the current topic, bold it if it does
+        if currentTopic?.topic != cell.topic?.topic {
+            cell.topicLabel.font = UIFont.systemFont(ofSize: 17)
+        } else {
+            cell.topicLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        }
+        
         return cell
         
     }
