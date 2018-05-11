@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13F8A33138AEC6531B6B09B1 /* Pods_MP_WatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C42DBEB1205704F5E9EA697 /* Pods_MP_WatchTests.framework */; };
+		3B910AAF20A56D2500D92AD8 /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B910AAE20A56D2500D92AD8 /* TopicsViewController.swift */; };
 		3BEAFA3420A5479200E343CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3320A5479200E343CE /* AppDelegate.swift */; };
-		3BEAFA3620A5479200E343CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3520A5479200E343CE /* ViewController.swift */; };
 		3BEAFA3920A5479200E343CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3720A5479200E343CE /* Main.storyboard */; };
 		3BEAFA3C20A5479200E343CE /* MP_Watch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3A20A5479200E343CE /* MP_Watch.xcdatamodeld */; };
 		3BEAFA3E20A5479200E343CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3D20A5479200E343CE /* Assets.xcassets */; };
@@ -46,9 +46,9 @@
 		05B680A4E707AEC7B0574E1F /* Pods-MP Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MP Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-MP Watch/Pods-MP Watch.release.xcconfig"; sourceTree = "<group>"; };
 		0C42DBEB1205704F5E9EA697 /* Pods_MP_WatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MP_WatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B7689CD58AFEC50CE32786 /* Pods_MP_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MP_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B910AAE20A56D2500D92AD8 /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
 		3BEAFA3020A5479200E343CE /* MP Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MP Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEAFA3320A5479200E343CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BEAFA3520A5479200E343CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BEAFA3820A5479200E343CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BEAFA3B20A5479200E343CE /* MP_Watch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MP_Watch.xcdatamodel; sourceTree = "<group>"; };
 		3BEAFA3D20A5479200E343CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,7 +129,6 @@
 				3BEAFA6920A54A4F00E343CE /* Views */,
 				3BEAFA6620A549EA00E343CE /* ViewControllers */,
 				3BEAFA3320A5479200E343CE /* AppDelegate.swift */,
-				3BEAFA3520A5479200E343CE /* ViewController.swift */,
 				3BEAFA3720A5479200E343CE /* Main.storyboard */,
 				3BEAFA3D20A5479200E343CE /* Assets.xcassets */,
 				3BEAFA3F20A5479200E343CE /* LaunchScreen.storyboard */,
@@ -161,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				3BEAFA6420A549E500E343CE /* TweetsViewController.swift */,
+				3B910AAE20A56D2500D92AD8 /* TopicsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -489,11 +489,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MP Watch/Pods-MP Watch-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeMenuViewController/SwipeMenuViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeMenuViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -507,9 +509,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B910AAF20A56D2500D92AD8 /* TopicsViewController.swift in Sources */,
 				3BEAFA6520A549E500E343CE /* TweetsViewController.swift in Sources */,
 				3BEAFA7120A5555C00E343CE /* APIClient.swift in Sources */,
-				3BEAFA3620A5479200E343CE /* ViewController.swift in Sources */,
 				3BEAFA6820A54A4900E343CE /* TweetCell.swift in Sources */,
 				3BEAFA6B20A54B1900E343CE /* Tweet.swift in Sources */,
 				3BEAFA3420A5479200E343CE /* AppDelegate.swift in Sources */,

@@ -2,14 +2,17 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
+  - SwipeMenuViewController (2.0.2)
 
 DEPENDENCIES:
   - AlamofireImage
+  - SwipeMenuViewController
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  SwipeMenuViewController: 47cab882ea011e09874cc3162fb566dbc3a4a121
 
-PODFILE CHECKSUM: 9370c1cc5a0e58188a264299b930dc368524db4d
+PODFILE CHECKSUM: 7653962a05dd59f7d78d4a892df491169bde98cd
 
 COCOAPODS: 1.4.0

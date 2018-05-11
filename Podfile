@@ -6,6 +6,7 @@ target 'MP Watch' do
   use_frameworks!
 
   pod 'AlamofireImage'
+  pod 'SwipeMenuViewController'
 
   target 'MP WatchTests' do
     inherit! :search_paths
