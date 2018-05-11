@@ -15,6 +15,10 @@
 		3BEAFA4120A5479200E343CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3F20A5479200E343CE /* LaunchScreen.storyboard */; };
 		3BEAFA4C20A5479200E343CE /* MP_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA4B20A5479200E343CE /* MP_WatchTests.swift */; };
 		3BEAFA5720A5479200E343CE /* MP_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA5620A5479200E343CE /* MP_WatchUITests.swift */; };
+		3BEAFA6520A549E500E343CE /* TweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA6420A549E500E343CE /* TweetsViewController.swift */; };
+		3BEAFA6820A54A4900E343CE /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA6720A54A4900E343CE /* TweetCell.swift */; };
+		3BEAFA6B20A54B1900E343CE /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA6A20A54B1900E343CE /* Tweet.swift */; };
+		3BEAFA7120A5555C00E343CE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA7020A5555C00E343CE /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		3BEAFA5220A5479200E343CE /* MP WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MP WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEAFA5620A5479200E343CE /* MP_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP_WatchUITests.swift; sourceTree = "<group>"; };
 		3BEAFA5820A5479200E343CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BEAFA6420A549E500E343CE /* TweetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
+		3BEAFA6720A54A4900E343CE /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		3BEAFA6A20A54B1900E343CE /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		3BEAFA7020A5555C00E343CE /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 		3BEAFA3220A5479200E343CE /* MP Watch */ = {
 			isa = PBXGroup;
 			children = (
+				3BEAFA6F20A5554C00E343CE /* API */,
+				3BEAFA6C20A54B1E00E343CE /* Models */,
+				3BEAFA6920A54A4F00E343CE /* Views */,
+				3BEAFA6620A549EA00E343CE /* ViewControllers */,
 				3BEAFA3320A5479200E343CE /* AppDelegate.swift */,
 				3BEAFA3520A5479200E343CE /* ViewController.swift */,
 				3BEAFA3720A5479200E343CE /* Main.storyboard */,
@@ -126,6 +138,38 @@
 				3BEAFA5820A5479200E343CE /* Info.plist */,
 			);
 			path = "MP WatchUITests";
+			sourceTree = "<group>";
+		};
+		3BEAFA6620A549EA00E343CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAFA6420A549E500E343CE /* TweetsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3BEAFA6920A54A4F00E343CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAFA6720A54A4900E343CE /* TweetCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BEAFA6C20A54B1E00E343CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAFA6A20A54B1900E343CE /* Tweet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BEAFA6F20A5554C00E343CE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAFA7020A5555C00E343CE /* APIClient.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BEAFA6520A549E500E343CE /* TweetsViewController.swift in Sources */,
+				3BEAFA7120A5555C00E343CE /* APIClient.swift in Sources */,
 				3BEAFA3620A5479200E343CE /* ViewController.swift in Sources */,
+				3BEAFA6820A54A4900E343CE /* TweetCell.swift in Sources */,
+				3BEAFA6B20A54B1900E343CE /* Tweet.swift in Sources */,
 				3BEAFA3420A5479200E343CE /* AppDelegate.swift in Sources */,
 				3BEAFA3C20A5479200E343CE /* MP_Watch.xcdatamodeld in Sources */,
 			);
