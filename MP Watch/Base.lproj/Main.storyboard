@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tweets View Controller-->
+        <!--This Week's Tweets-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TweetsViewController" customModule="MP_Watch" customModuleProvider="target" sceneMemberID="viewController">
@@ -92,7 +92,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qwN-yc-gw1">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qwN-yc-gw1">
                                 <rect key="frame" x="0.0" y="64" width="375" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -123,7 +123,6 @@
                                         <constraints>
                                             <constraint firstItem="fzX-VK-oAU" firstAttribute="centerX" secondItem="apt-ur-Ahl" secondAttribute="centerX" id="5iX-gn-yAD"/>
                                             <constraint firstItem="fzX-VK-oAU" firstAttribute="centerY" secondItem="apt-ur-Ahl" secondAttribute="centerY" id="SDy-Kt-gYN"/>
-                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="fzX-VK-oAU" secondAttribute="trailing" id="kys-AJ-fuZ"/>
                                             <constraint firstItem="fzX-VK-oAU" firstAttribute="leading" secondItem="apt-ur-Ahl" secondAttribute="leadingMargin" id="oLB-GK-9sa"/>
                                         </constraints>
                                         <connections>
@@ -145,7 +144,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IBh-Hu-ZUP"/>
+                    <navigationItem key="navigationItem" title="This Week's Tweets" id="IBh-Hu-ZUP"/>
                     <connections>
                         <outlet property="tableView" destination="wkq-gQ-wuu" id="7bt-Bc-nc1"/>
                         <outlet property="topicCollectionView" destination="qwN-yc-gw1" id="SHo-Iq-bnK"/>
