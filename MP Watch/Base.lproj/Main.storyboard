@@ -131,6 +131,10 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3e0-sV-Wc9">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -147,6 +151,7 @@
                     <navigationItem key="navigationItem" title="This Week's Tweets" id="IBh-Hu-ZUP"/>
                     <connections>
                         <outlet property="tableView" destination="wkq-gQ-wuu" id="7bt-Bc-nc1"/>
+                        <outlet property="tableViewLoadingIndicator" destination="3e0-sV-Wc9" id="AWM-ZW-HV0"/>
                         <outlet property="topicCollectionView" destination="qwN-yc-gw1" id="SHo-Iq-bnK"/>
                     </connections>
                 </viewController>

@@ -21,6 +21,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 - [X] Tweet cell
     - [X] Displays a tweet's age, author, content
     - [X] Specially format hashtags, links, and mentions
+- [X] Loading
+    - [X] Add activitity indicator for TableViews
 
 🚫 The following functionality is under construction: 🔨
 
@@ -35,7 +37,6 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
     - [ ] Given MP name, pulls tweets from MP endpoint
     - [ ] Displays tweets in topic sections
 - [ ] Loading
-    - [ ] Add activitity indicator for TableViews
     - [ ] Add loading HUD for initial load
 - [ ] Tweet cell
     - [ ] Add action support for mentions, hashtags, links

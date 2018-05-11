@@ -13,8 +13,6 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var tweets: [Tweet]?
     var topics: [Topic]?
     
-    var normalSize: Float?
-    
     var currentTopicIndexPath: IndexPath?
     var currentTopic: Topic? {
         didSet {
@@ -23,6 +21,7 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableViewLoadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var topicCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -37,6 +36,8 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let flowLayout = topicCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         flowLayout.estimatedItemSize = CGSize(width: 75, height: 60)
+        
+        tableViewLoadingIndicator.isHidden = true
         
         fetchTopics()
     }
@@ -54,10 +55,18 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func fetchTweets(topic: String) {
+        // clear tableView before getting a new topic's tweets
+        tweets = []
+        tableView.reloadData()
+        
+        tableViewLoadingIndicator.isHidden = false
+        tableViewLoadingIndicator.startAnimating()
         APIClient().getTopicTweets(topic: topic, completion: { (tweets: [Tweet]?, error: Error?) in
             if let tweets = tweets {
                 self.tweets = tweets
                 self.tableView.reloadData()
+                self.tableViewLoadingIndicator.stopAnimating()
+                self.tableViewLoadingIndicator.isHidden = true
             }
         })
     }
@@ -83,6 +92,11 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // if the user clicks on the current topic again, don't do anything
+        if currentTopicIndexPath == indexPath {
+            return
+        }
+        
         // if the previously-selected topic is still on screen, unbold it
         if let prev = collectionView.cellForItem(at: currentTopicIndexPath!) as? TopicCell {
             // hacky fix - when a topic initially renders as bold (either because its the first topic or
