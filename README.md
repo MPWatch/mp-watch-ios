@@ -4,7 +4,7 @@
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/b5miRCH.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/XGqXoDK.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -24,6 +24,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 🚫 The following functionality is under construction: 🔨
 
+- [ ] Tweet cell
+    - [ ] Cut off Twitter handle before cutting name
 - [ ] Topic bar UI improvements
     - [ ] Add underline, animation for selected topic
 - [ ] Movement betweent topics
@@ -32,10 +34,21 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 - [ ] Add search bar
     - [ ] Given MP name, pulls tweets from MP endpoint
     - [ ] Displays tweets in topic sections
-- [ ] Add activitity indicator for TableViews
-- [ ] Add loading HUD for initial load
+- [ ] Loading
+    - [ ] Add activitity indicator for TableViews
+    - [ ] Add loading HUD for initial load
 - [ ] Tweet cell
     - [ ] Add action support for mentions, hashtags, links
     - [ ] Add favorite and retweet count
 - [ ] Add refresh
 - [ ] Add infinite scroll for topic tweets
+- [ ] Errors
+    - [ ] Add error if API down
+    - [ ] Add error if Internet down
+- [ ] Persist state on app refresh
+    -  [ ] Save current topic, list of topics, downloaded tweets
+- [ ] Tweet detail view
+    - [ ] Follow links within
+    - [ ] Add behavior for mentions and hashtags
+    - [ ] Add ability to reply, retweet, favorite
+
