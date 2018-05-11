@@ -2,19 +2,20 @@
 //  TweetCell.swift
 //  MP Watch
 //
-//  Created by Benny Singer on 5/10/18.
+//  Created by MPWatch Team on 5/10/18.
 //  Copyright © 2018 MPWatch. All rights reserved.
 //
 
 import UIKit
 import AlamofireImage
+import ActiveLabel
 
 class TweetCell: UITableViewCell {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameButton: UIButton!
     @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var tweetLabel: UILabel!
+    @IBOutlet weak var tweetLabel: ActiveLabel!
     @IBOutlet weak var timeLabel: UILabel!
     
     var tweet: Tweet! {
@@ -49,6 +50,13 @@ class TweetCell: UITableViewCell {
                 tweetLabel.text = tweetText as String
             } else {
                 tweetLabel.text = ""
+            }
+            
+            tweetLabel.customize { tweetLabel in
+                tweetLabel.textColor = UIColor(red: 102.0/255, green: 117.0/255, blue: 127.0/255, alpha: 1)
+                tweetLabel.hashtagColor = UIColor(red: 85.0/255, green: 172.0/255, blue: 238.0/255, alpha: 1)
+                tweetLabel.mentionColor = UIColor(red: 238.0/255, green: 85.0/255, blue: 96.0/255, alpha: 1)
+                tweetLabel.URLColor = UIColor(red: 85.0/255, green: 238.0/255, blue: 151.0/255, alpha: 1)
             }
         }
     }

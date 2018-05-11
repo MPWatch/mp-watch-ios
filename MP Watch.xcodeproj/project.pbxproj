@@ -49,6 +49,7 @@
 		11B7689CD58AFEC50CE32786 /* Pods_MP_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MP_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B69C38D20A59023007FA5FF /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		3B69C38F20A59114007FA5FF /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		3BCE728020A62E590075DD94 /* MP Watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MP Watch-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BEAFA3020A5479200E343CE /* MP Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MP Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEAFA3320A5479200E343CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BEAFA3820A5479200E343CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 				3BEAFA3F20A5479200E343CE /* LaunchScreen.storyboard */,
 				3BEAFA4220A5479200E343CE /* Info.plist */,
 				3BEAFA3A20A5479200E343CE /* MP_Watch.xcdatamodeld */,
+				3BCE728020A62E590075DD94 /* MP Watch-Bridging-Header.h */,
 			);
 			path = "MP Watch";
 			sourceTree = "<group>";
@@ -292,6 +294,7 @@
 				TargetAttributes = {
 					3BEAFA2F20A5479200E343CE = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					3BEAFA4620A5479200E343CE = {
@@ -490,11 +493,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MP Watch/Pods-MP Watch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActiveLabel/ActiveLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActiveLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
@@ -684,12 +689,15 @@
 			baseConfigurationReference = 57035A41467848D4A68F8178 /* Pods-MP Watch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH4R8G85HG;
 				INFOPLIST_FILE = "MP Watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MP Watch/MP Watch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -700,12 +708,14 @@
 			baseConfigurationReference = 05B680A4E707AEC7B0574E1F /* Pods-MP Watch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH4R8G85HG;
 				INFOPLIST_FILE = "MP Watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MP Watch/MP Watch-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

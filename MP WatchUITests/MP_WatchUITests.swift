@@ -2,7 +2,7 @@
 //  MP_WatchUITests.swift
 //  MP WatchUITests
 //
-//  Created by Benny Singer on 5/10/18.
+//  Created by MPWatch Team on 5/10/18.
 //  Copyright © 2018 MPWatch. All rights reserved.
 //
 
