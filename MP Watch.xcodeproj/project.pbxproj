@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BEAFA3420A5479200E343CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3320A5479200E343CE /* AppDelegate.swift */; };
+		3BEAFA3620A5479200E343CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3520A5479200E343CE /* ViewController.swift */; };
+		3BEAFA3920A5479200E343CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3720A5479200E343CE /* Main.storyboard */; };
+		3BEAFA3C20A5479200E343CE /* MP_Watch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3A20A5479200E343CE /* MP_Watch.xcdatamodeld */; };
+		3BEAFA3E20A5479200E343CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3D20A5479200E343CE /* Assets.xcassets */; };
+		3BEAFA4120A5479200E343CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEAFA3F20A5479200E343CE /* LaunchScreen.storyboard */; };
+		3BEAFA4C20A5479200E343CE /* MP_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA4B20A5479200E343CE /* MP_WatchTests.swift */; };
+		3BEAFA5720A5479200E343CE /* MP_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAFA5620A5479200E343CE /* MP_WatchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BEAFA4820A5479200E343CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BEAFA2820A5479200E343CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BEAFA2F20A5479200E343CE;
+			remoteInfo = "MP Watch";
+		};
+		3BEAFA5320A5479200E343CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BEAFA2820A5479200E343CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BEAFA2F20A5479200E343CE;
+			remoteInfo = "MP Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BEAFA3020A5479200E343CE /* MP Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MP Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEAFA3320A5479200E343CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BEAFA3520A5479200E343CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BEAFA3820A5479200E343CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BEAFA3B20A5479200E343CE /* MP_Watch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MP_Watch.xcdatamodel; sourceTree = "<group>"; };
+		3BEAFA3D20A5479200E343CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BEAFA4020A5479200E343CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BEAFA4220A5479200E343CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BEAFA4720A5479200E343CE /* MP WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MP WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEAFA4B20A5479200E343CE /* MP_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP_WatchTests.swift; sourceTree = "<group>"; };
+		3BEAFA4D20A5479200E343CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BEAFA5220A5479200E343CE /* MP WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MP WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEAFA5620A5479200E343CE /* MP_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP_WatchUITests.swift; sourceTree = "<group>"; };
+		3BEAFA5820A5479200E343CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BEAFA2D20A5479200E343CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BEAFA4420A5479200E343CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BEAFA4F20A5479200E343CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BEAFA2720A5479200E343CE = {
+			isa = PBXGroup;
+			children = (
+				3BEAFA3220A5479200E343CE /* MP Watch */,
+				3BEAFA4A20A5479200E343CE /* MP WatchTests */,
+				3BEAFA5520A5479200E343CE /* MP WatchUITests */,
+				3BEAFA3120A5479200E343CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BEAFA3120A5479200E343CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAFA3020A5479200E343CE /* MP Watch.app */,
+				3BEAFA4720A5479200E343CE /* MP WatchTests.xctest */,
+				3BEAFA5220A5479200E343CE /* MP WatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BEAFA3220A5479200E343CE /* MP Watch */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAFA3320A5479200E343CE /* AppDelegate.swift */,
+				3BEAFA3520A5479200E343CE /* ViewController.swift */,
+				3BEAFA3720A5479200E343CE /* Main.storyboard */,
+				3BEAFA3D20A5479200E343CE /* Assets.xcassets */,
+				3BEAFA3F20A5479200E343CE /* LaunchScreen.storyboard */,
+				3BEAFA4220A5479200E343CE /* Info.plist */,
+				3BEAFA3A20A5479200E343CE /* MP_Watch.xcdatamodeld */,
+			);
+			path = "MP Watch";
+			sourceTree = "<group>";
+		};
+		3BEAFA4A20A5479200E343CE /* MP WatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAFA4B20A5479200E343CE /* MP_WatchTests.swift */,
+				3BEAFA4D20A5479200E343CE /* Info.plist */,
+			);
+			path = "MP WatchTests";
+			sourceTree = "<group>";
+		};
+		3BEAFA5520A5479200E343CE /* MP WatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAFA5620A5479200E343CE /* MP_WatchUITests.swift */,
+				3BEAFA5820A5479200E343CE /* Info.plist */,
+			);
+			path = "MP WatchUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BEAFA2F20A5479200E343CE /* MP Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BEAFA5B20A5479200E343CE /* Build configuration list for PBXNativeTarget "MP Watch" */;
+			buildPhases = (
+				3BEAFA2C20A5479200E343CE /* Sources */,
+				3BEAFA2D20A5479200E343CE /* Frameworks */,
+				3BEAFA2E20A5479200E343CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MP Watch";
+			productName = "MP Watch";
+			productReference = 3BEAFA3020A5479200E343CE /* MP Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BEAFA4620A5479200E343CE /* MP WatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BEAFA5E20A5479200E343CE /* Build configuration list for PBXNativeTarget "MP WatchTests" */;
+			buildPhases = (
+				3BEAFA4320A5479200E343CE /* Sources */,
+				3BEAFA4420A5479200E343CE /* Frameworks */,
+				3BEAFA4520A5479200E343CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BEAFA4920A5479200E343CE /* PBXTargetDependency */,
+			);
+			name = "MP WatchTests";
+			productName = "MP WatchTests";
+			productReference = 3BEAFA4720A5479200E343CE /* MP WatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BEAFA5120A5479200E343CE /* MP WatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BEAFA6120A5479200E343CE /* Build configuration list for PBXNativeTarget "MP WatchUITests" */;
+			buildPhases = (
+				3BEAFA4E20A5479200E343CE /* Sources */,
+				3BEAFA4F20A5479200E343CE /* Frameworks */,
+				3BEAFA5020A5479200E343CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BEAFA5420A5479200E343CE /* PBXTargetDependency */,
+			);
+			name = "MP WatchUITests";
+			productName = "MP WatchUITests";
+			productReference = 3BEAFA5220A5479200E343CE /* MP WatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BEAFA2820A5479200E343CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = MPWatch;
+				TargetAttributes = {
+					3BEAFA2F20A5479200E343CE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3BEAFA4620A5479200E343CE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3BEAFA2F20A5479200E343CE;
+					};
+					3BEAFA5120A5479200E343CE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3BEAFA2F20A5479200E343CE;
+					};
+				};
+			};
+			buildConfigurationList = 3BEAFA2B20A5479200E343CE /* Build configuration list for PBXProject "MP Watch" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BEAFA2720A5479200E343CE;
+			productRefGroup = 3BEAFA3120A5479200E343CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BEAFA2F20A5479200E343CE /* MP Watch */,
+				3BEAFA4620A5479200E343CE /* MP WatchTests */,
+				3BEAFA5120A5479200E343CE /* MP WatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BEAFA2E20A5479200E343CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEAFA4120A5479200E343CE /* LaunchScreen.storyboard in Resources */,
+				3BEAFA3E20A5479200E343CE /* Assets.xcassets in Resources */,
+				3BEAFA3920A5479200E343CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BEAFA4520A5479200E343CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BEAFA5020A5479200E343CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BEAFA2C20A5479200E343CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEAFA3620A5479200E343CE /* ViewController.swift in Sources */,
+				3BEAFA3420A5479200E343CE /* AppDelegate.swift in Sources */,
+				3BEAFA3C20A5479200E343CE /* MP_Watch.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BEAFA4320A5479200E343CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEAFA4C20A5479200E343CE /* MP_WatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BEAFA4E20A5479200E343CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEAFA5720A5479200E343CE /* MP_WatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BEAFA4920A5479200E343CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BEAFA2F20A5479200E343CE /* MP Watch */;
+			targetProxy = 3BEAFA4820A5479200E343CE /* PBXContainerItemProxy */;
+		};
+		3BEAFA5420A5479200E343CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BEAFA2F20A5479200E343CE /* MP Watch */;
+			targetProxy = 3BEAFA5320A5479200E343CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BEAFA3720A5479200E343CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BEAFA3820A5479200E343CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BEAFA3F20A5479200E343CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BEAFA4020A5479200E343CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BEAFA5920A5479200E343CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BEAFA5A20A5479200E343CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BEAFA5C20A5479200E343CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4R8G85HG;
+				INFOPLIST_FILE = "MP Watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BEAFA5D20A5479200E343CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4R8G85HG;
+				INFOPLIST_FILE = "MP Watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BEAFA5F20A5479200E343CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4R8G85HG;
+				INFOPLIST_FILE = "MP WatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MP Watch.app/MP Watch";
+			};
+			name = Debug;
+		};
+		3BEAFA6020A5479200E343CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4R8G85HG;
+				INFOPLIST_FILE = "MP WatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MP Watch.app/MP Watch";
+			};
+			name = Release;
+		};
+		3BEAFA6220A5479200E343CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4R8G85HG;
+				INFOPLIST_FILE = "MP WatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MP Watch";
+			};
+			name = Debug;
+		};
+		3BEAFA6320A5479200E343CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4R8G85HG;
+				INFOPLIST_FILE = "MP WatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MP Watch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BEAFA2B20A5479200E343CE /* Build configuration list for PBXProject "MP Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEAFA5920A5479200E343CE /* Debug */,
+				3BEAFA5A20A5479200E343CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BEAFA5B20A5479200E343CE /* Build configuration list for PBXNativeTarget "MP Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEAFA5C20A5479200E343CE /* Debug */,
+				3BEAFA5D20A5479200E343CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BEAFA5E20A5479200E343CE /* Build configuration list for PBXNativeTarget "MP WatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEAFA5F20A5479200E343CE /* Debug */,
+				3BEAFA6020A5479200E343CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BEAFA6120A5479200E343CE /* Build configuration list for PBXNativeTarget "MP WatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEAFA6220A5479200E343CE /* Debug */,
+				3BEAFA6320A5479200E343CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3BEAFA3A20A5479200E343CE /* MP_Watch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3BEAFA3B20A5479200E343CE /* MP_Watch.xcdatamodel */,
+			);
+			currentVersion = 3BEAFA3B20A5479200E343CE /* MP_Watch.xcdatamodel */;
+			path = MP_Watch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3BEAFA2820A5479200E343CE /* Project object */;
+}
