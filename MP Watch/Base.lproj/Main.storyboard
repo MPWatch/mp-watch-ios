@@ -56,7 +56,7 @@
                                                         <constraint firstAttribute="height" constant="45" id="jd0-hC-2DO"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6N-N1-PlW">
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6N-N1-PlW">
                                                     <rect key="frame" x="61" y="4" width="48" height="33"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <state key="normal" title="Name">
@@ -131,9 +131,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3e0-sV-Wc9">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3e0-sV-Wc9">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -142,6 +141,8 @@
                             <constraint firstItem="wkq-gQ-wuu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SJE-lN-Tqb"/>
                             <constraint firstItem="qwN-yc-gw1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UKu-0t-sfE"/>
                             <constraint firstItem="qwN-yc-gw1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WQ7-v2-aqc"/>
+                            <constraint firstItem="3e0-sV-Wc9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bIE-9W-dm8"/>
+                            <constraint firstItem="3e0-sV-Wc9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cTg-5L-8Tf"/>
                             <constraint firstItem="wkq-gQ-wuu" firstAttribute="top" secondItem="qwN-yc-gw1" secondAttribute="bottom" id="kOn-Hn-iQz"/>
                             <constraint firstItem="qwN-yc-gw1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="quC-WK-OEt"/>
                             <constraint firstItem="wkq-gQ-wuu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zPc-SI-FVU"/>
