@@ -49,7 +49,6 @@
 		11B7689CD58AFEC50CE32786 /* Pods_MP_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MP_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B69C38D20A59023007FA5FF /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		3B69C38F20A59114007FA5FF /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
-		3BCE728020A62E590075DD94 /* MP Watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MP Watch-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BEAFA3020A5479200E343CE /* MP Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MP Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEAFA3320A5479200E343CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BEAFA3820A5479200E343CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,7 +136,6 @@
 				3BEAFA3F20A5479200E343CE /* LaunchScreen.storyboard */,
 				3BEAFA4220A5479200E343CE /* Info.plist */,
 				3BEAFA3A20A5479200E343CE /* MP_Watch.xcdatamodeld */,
-				3BCE728020A62E590075DD94 /* MP Watch-Bridging-Header.h */,
 			);
 			path = "MP Watch";
 			sourceTree = "<group>";
@@ -696,7 +694,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MP Watch/MP Watch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -715,7 +712,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MPWatch.MP-Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MP Watch/MP Watch-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
