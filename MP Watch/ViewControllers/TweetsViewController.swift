@@ -22,6 +22,7 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewLoadingIndicator: UIActivityIndicatorView!
+    var refreshControl: UIRefreshControl!
     @IBOutlet weak var topicCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -39,6 +40,10 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         tableViewLoadingIndicator.isHidden = true
         
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
+        
         fetchTopics()
     }
     
@@ -54,26 +59,25 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         })
     }
     
-    func fetchTweets(topic: String) {
-        // clear tableView before getting a new topic's tweets
-        tweets = []
-        tableView.reloadData()
-        
-        tableViewLoadingIndicator.isHidden = false
-        tableViewLoadingIndicator.startAnimating()
+    func fetchTweets(topic: String, refresh:Bool = false) {
+        if !refresh {
+            // clear tableView before getting a new topic's tweets
+            tweets = []
+            tableView.reloadData()
+            
+            tableViewLoadingIndicator.isHidden = false
+            tableViewLoadingIndicator.startAnimating()
+        }
         APIClient().getTopicTweets(topic: topic, completion: { (tweets: [Tweet]?, error: Error?) in
             if let tweets = tweets {
                 self.tweets = tweets
                 self.tableView.reloadData()
+                
                 self.tableViewLoadingIndicator.stopAnimating()
                 self.tableViewLoadingIndicator.isHidden = true
+                self.refreshControl.endRefreshing()
             }
         })
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -134,6 +138,17 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         return cell
         
+    }
+    
+    @objc func onRefresh() {
+        if let currentTopic = currentTopic {
+            fetchTweets(topic: currentTopic.topic!, refresh: true)
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 }
